@@ -1,0 +1,9 @@
+{
+  "name": "ahntree_portfolio",
+  "version": "1.0.0",
+  "description": "ahntree's portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/akh9804/akh9804.github.io.git",
+  "author": "ahntree",
+  "license": "MIT"
+}
