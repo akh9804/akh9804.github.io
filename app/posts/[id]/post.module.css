@@ -15,7 +15,16 @@
 
 .post_content h1 {
   font-size: 1.7rem;
+  margin-top: 48px;
+}
+
+.post_content h1:first-child {
   margin-top: 36px;
+}
+
+.post_content h2 {
+  font-size: 1.4rem;
+  margin-top: 24px;
 }
 
 .post_content p {
@@ -24,7 +33,8 @@
   font-weight: 200;
 }
 
-.post_content p code {
+.post_content p code,
+.post_content ol code {
   background-color: #e9ecef;
   padding: 2px 4px;
   border-radius: 4px;
@@ -42,11 +52,16 @@
   opacity: 0.7;
 }
 
-.post_content ul {
+.post_content ul,
+.post_content ol {
   margin: 16px 0 16px 30px;
   line-height: 30px;
 }
 
 .post_content pre {
   margin-top: 16px;
+}
+
+.post_content img {
+  max-width: 100%;
 }
