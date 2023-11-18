@@ -18,3 +18,10 @@
   font-size: 1.75rem;
   font-weight: bold;
 }
+
+.main {
+  width: 100%;
+  max-width: 800px;
+  padding: 112px 24px 24px;
+  margin: 0 auto;
+}

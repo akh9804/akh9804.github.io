@@ -23,7 +23,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             </Link>
           </div>
         </header>
-        {children}
+        <main className={styles.main}>{children}</main>
       </body>
     </html>
   );
