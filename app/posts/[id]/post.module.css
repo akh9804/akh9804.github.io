@@ -1,0 +1,52 @@
+.post_header {
+}
+
+.post_title {
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.post_date {
+  font-size: 1rem;
+}
+
+.post_content {
+}
+
+.post_content h1 {
+  font-size: 1.7rem;
+  margin-top: 36px;
+}
+
+.post_content p {
+  margin-top: 16px;
+  line-height: 26px;
+  font-weight: 200;
+}
+
+.post_content p code {
+  background-color: #e9ecef;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.post_content p a {
+  color: #6499e9;
+  font-weight: 300;
+  transition: 0.3s all;
+}
+
+.post_content p a:hover {
+  opacity: 0.7;
+}
+
+.post_content ul {
+  margin: 16px 0 16px 30px;
+  line-height: 30px;
+}
+
+.post_content pre {
+  margin-top: 16px;
+}

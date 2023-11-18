@@ -14,7 +14,7 @@ export default function Home() {
             <Link href={`/posts/${id}`}>
               <h1 className={styles.post_item_title}>{title}</h1>
             </Link>
-            <Date dateString={date} />
+            <Date className={styles.post_item_date} dateString={date} />
           </header>
           <section>
             <p className={styles.post_item_description}>{slug}</p>

@@ -3,6 +3,7 @@ import {Audiowide, Noto_Sans_KR} from 'next/font/google';
 import Link from 'next/link';
 import './globals.css';
 import styles from './layout.module.css';
+import './prism.css';
 
 const audiowide = Audiowide({weight: '400', subsets: ['latin']});
 const notoSansKR = Noto_Sans_KR({subsets: ['latin']});
