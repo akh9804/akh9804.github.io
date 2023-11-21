@@ -42,6 +42,12 @@
   font-size: 1rem;
 }
 
+@media screen and (min-width: 787px) {
+  .post_item + .post_item {
+    border-top: 1px solid #f1f1f1;
+  }
+}
+
 @media screen and (max-width: 786px) {
   .post_item_header {
     flex-direction: column;
