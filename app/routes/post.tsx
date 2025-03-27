@@ -2,6 +2,10 @@ import {getPost} from '@/utils/md.server';
 import {useLoaderData} from 'react-router';
 import type {Route} from './+types/post';
 
+export function meta({params}: Route.MetaArgs) {
+  return [{title: `ahntree.log | ${params.slug}`}, {name: 'description', content: params.slug}];
+}
+
 export async function loader({params}: Route.LoaderArgs) {
   return getPost(params.slug);
 }

@@ -4,7 +4,7 @@ import {useLoaderData} from 'react-router';
 import type {Route} from './+types/home';
 
 export function meta({}: Route.MetaArgs) {
-  return [{title: 'Ahntree Blog'}, {name: 'description', content: 'Welcome to Ahntree Blog'}];
+  return [{title: 'ahntree.log'}, {name: 'description', content: 'Welcome to Ahntree Blog'}];
 }
 
 export async function loader() {
@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 relative -top-4">
         {posts.map(post => (
           <Post key={post.slug} post={post} />
         ))}

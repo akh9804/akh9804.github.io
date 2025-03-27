@@ -1,9 +1,10 @@
+import Header from '@/components/Header';
 import hljs from 'highlight.js';
+import {useEffect} from 'react';
 import {isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration} from 'react-router';
+import type {Route} from './+types/root';
 
 import 'highlight.js/styles/lioshi.css';
-import {useEffect} from 'react';
-import type {Route} from './+types/root';
 import './app.css';
 
 export const links: Route.LinksFunction = () => [
@@ -25,6 +26,7 @@ export function Layout({children}: {children: React.ReactNode}) {
         <Links />
       </head>
       <body className="bg-[var(--color-bg)] mx-auto max-w-2xl px-5 py-12">
+        <Header />
         <main>{children}</main>
         <ScrollRestoration />
         <Scripts />
