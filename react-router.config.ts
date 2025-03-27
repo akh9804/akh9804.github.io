@@ -1,7 +1,11 @@
 import type {Config} from '@react-router/dev/config';
+import {getAllPosts} from './app/utils/md.server';
 
 export default {
-  // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
+  ssr: false,
+  async prerender() {
+    const posts = await getAllPosts();
+
+    return ['/', ...posts.map(post => `/posts/${post.slug}`)];
+  },
 } satisfies Config;
