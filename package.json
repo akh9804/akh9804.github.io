@@ -12,6 +12,7 @@
     "@react-router/node": "^7.4.0",
     "@react-router/serve": "^7.4.0",
     "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
     "isbot": "^5.1.17",
     "marked": "^15.0.7",
     "react": "^19.0.0",

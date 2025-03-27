@@ -10,12 +10,10 @@ export default function Post() {
   const post = useLoaderData<typeof loader>();
 
   return (
-    <article>
-      <h1>{post.title}</h1>
-      <p>
-        <em>{post.date}</em>
-      </p>
-      <div dangerouslySetInnerHTML={{__html: post.html}} />
+    <article className="post">
+      <h1 className="text-[var(--color-title)] text-5xl font-bold font-title">{post.title}</h1>
+      <p className="text-sm text-gray-700 mt-2">{post.date}</p>
+      <div className="markdown mt-10" dangerouslySetInnerHTML={{__html: post.html}} />
     </article>
   );
 }
