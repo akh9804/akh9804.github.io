@@ -1,7 +1,7 @@
 ---
 title: '이미지 CLS 최적화'
 date: '2022-12-03'
-slug: '이미지 CLS 최적화를 통한 사용자 경험 향상'
+preview: '이미지 CLS 최적화를 통한 사용자 경험 향상'
 ---
 
 # CLS(Cumulative Layout Shift)
