@@ -1,6 +1,4 @@
 import Header from '@/components/Header';
-import hljs from 'highlight.js';
-import {useEffect} from 'react';
 import {isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration} from 'react-router';
 import type {Route} from './+types/root';
 
@@ -36,10 +34,6 @@ export function Layout({children}: {children: React.ReactNode}) {
 }
 
 export default function App() {
-  useEffect(() => {
-    hljs.highlightAll();
-  }, []);
-
   return <Outlet />;
 }
 

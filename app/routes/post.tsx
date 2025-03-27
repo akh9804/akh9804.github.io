@@ -1,4 +1,6 @@
 import {getPost} from '@/utils/md.server';
+import hljs from 'highlight.js';
+import {useEffect} from 'react';
 import {useLoaderData} from 'react-router';
 import type {Route} from './+types/post';
 
@@ -12,6 +14,10 @@ export async function loader({params}: Route.LoaderArgs) {
 
 export default function Post() {
   const post = useLoaderData<typeof loader>();
+
+  useEffect(() => {
+    hljs.highlightAll();
+  }, []);
 
   return (
     <article className="post">
