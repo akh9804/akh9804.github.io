@@ -1,5 +1,6 @@
+import Post from '@/components/Post';
 import {getAllPosts} from '@/utils/md.server';
-import {Link, useLoaderData} from 'react-router';
+import {useLoaderData} from 'react-router';
 import type {Route} from './+types/home';
 
 export function meta({}: Route.MetaArgs) {
@@ -15,20 +16,11 @@ export default function Home() {
 
   return (
     <div>
-      <h1>블로그</h1>
-      <ul>
+      <div className="flex flex-col gap-8">
         {posts.map(post => (
-          <li key={post.slug}>
-            <h2>
-              <Link to={`/posts/${post.slug}`}>{post.title}</Link>
-            </h2>
-            <p>
-              <em>{post.date}</em>
-            </p>
-            <p>{post.preview}...</p>
-          </li>
+          <Post key={post.slug} post={post} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

@@ -10,14 +10,13 @@ export async function getPost(slug: string) {
   const file = await fs.readFile(filePath, 'utf-8');
   const {content, data} = matter(file);
   const html = await marked(content);
-  const preview = html.split('\n').slice(0, 3).join(' ');
 
   return {
     slug,
     html,
-    preview,
     title: data.title,
     date: data.date,
+    preview: data.preview,
   };
 }
 
