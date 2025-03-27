@@ -90,7 +90,7 @@ ng update @angular/core@14.0.0
 
 패키지 간 호환성 문제는 해결되었지만 해결되지 않은 문제가 있다. 바로 이전 버전과 업데이트 버전 사이의 변경 사항으로 인한 호환성 문제다.
 
-![semver](/app/assets/angular_package_management/semver.webp)
+![semver](/images/angular_package_management/semver.webp)
 
 npm 저장소의 모든 패키지는 [semantic versioning](https://semver.org/lang/ko/)을 따르고 있다. 이에 따르면 일반적으로 minor와 patch 버전의 증가는 호환성 문제가 발생하지 않는다. 하지만 major 버전의 증가는 때때로 호환성 문제를 야기한다. 보통의 경우, 해당 패키지의 `CHANGELOG`나 `마이그레이션 가이드`를 참고해서 수정해야 한다.
 

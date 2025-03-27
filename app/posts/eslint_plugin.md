@@ -18,7 +18,7 @@ preview: 'EsLint 플러그인과 설정 패키지를 개발하는 방법'
 
 EsLint 동작 방식은 아래와 같다.
 
-![EsLint 동작 방식](/app/assets/eslint_plugin/eslint_principle.webp)
+![EsLint 동작 방식](/images/eslint_plugin/eslint_principle.webp)
 
 ### 코드 파싱
 
@@ -28,7 +28,7 @@ EsLint 동작 방식은 아래와 같다.
 
 다음으로 파싱된 AST를 분석한다. AST는 다음과 같은 트리 형태의 구조를 가지고 있다.
 
-![AST](/app/assets/eslint_plugin/ast.webp)
+![AST](/images/eslint_plugin/ast.webp)
 
 각 노드는 `VariableDeclaration`, `Identifier` 등의 타입을 가진다. 모든 노드를 순회하며 규칙 준수 여부를 검사하는데 이 때 규칙 적용 여부의 기준이 노드의 타입이 된다.
 
@@ -53,7 +53,7 @@ EsLint의 첫 배포일은 2013년이다. 지금으로부터 약 9년 전인데,
 
 프로젝트 구조는 아래와 같다.
 
-![Project Structure](/app/assets/eslint_plugin/project_structure.webp)
+![Project Structure](/images/eslint_plugin/project_structure.webp)
 
 규칙 관련 파일들은 `src`에, 테스트 관련 파일들은 `tests`에 두었다.
 
@@ -118,7 +118,7 @@ const createRule = ESLintUtils.RuleCreator(ruleName => '규칙 문서 URL');
 
 이 때, 규칙 내용을 정리한 페이지를 만들어 `규칙 문서 URL`로 제공하는 것을 추천한다.
 
-![Error](/app/assets/eslint_plugin/error.webp)
+![Error](/images/eslint_plugin/error.webp)
 
 규칙을 위반한 코드가 있을 경우 위와 같이 IDE에서 규칙 내용을 팝업창으로 보여주는데, 규칙 문서 링크도 함께 제공된다. 사용자가 바로 규칙 내용을 파악하고 수정하는 데 도움을 줄 수 있다.
 
@@ -199,7 +199,7 @@ ruleTester.run('custom-rule', rule, {
 
 플러그인보다 훨씬 간단한 구조를 가진다.
 
-![Project Structure](/app/assets/eslint_plugin/project_structure2.webp)
+![Project Structure](/images/eslint_plugin/project_structure2.webp)
 
 기본적으로 필요한 건 `index.js`, `package.json` 이고 여러 버전의 설정을 공유하고 싶다면 그만큼의 js 파일이 필요하다.
 

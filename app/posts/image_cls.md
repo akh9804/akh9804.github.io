@@ -12,7 +12,7 @@ slug: '이미지 CLS 최적화를 통한 사용자 경험 향상'
 
 # CLS로 인한 사용자 경험 저하
 
-![CLS](/app/assets/image_cls/cls.webp)
+![CLS](/images/image_cls/cls.webp)
 
 왼쪽 화면의 모습일 때, 사용자가 Zebra를 클릭하려고 시도한다고 가정해보자. 다음과 같은 상황이 벌어질 수 있다.
 
@@ -33,7 +33,7 @@ slug: '이미지 CLS 최적화를 통한 사용자 경험 향상'
 
 위 예시처럼 이미지 크기가 고정적인 경우는 괜찮지만, 스크린 크기 등의 요소에 따라 이미지 크기가 가변적인 경우도 많다.
 
-![CLS](/app/assets/image_cls/image-cls.webp)
+![CLS](/images/image_cls/image-cls.webp)
 
 이런 경우엔 이미지 로딩 전에 이미지 크기를 알기가 어렵다. 그래서 이미지 로딩 전과 후의 높이 차이로 인한 레이아웃 이동이 발생할 수 있다.
 
