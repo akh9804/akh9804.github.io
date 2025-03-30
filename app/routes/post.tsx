@@ -4,6 +4,8 @@ import {useEffect} from 'react';
 import {useLoaderData} from 'react-router';
 import type {Route} from './+types/post';
 
+import '../styles/post.css';
+
 export function meta({params}: Route.MetaArgs) {
   return [{title: `ahntree.log | ${params.slug}`}, {name: 'description', content: params.slug}];
 }
