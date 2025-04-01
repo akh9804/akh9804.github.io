@@ -127,6 +127,14 @@ export default function About() {
           </article>
         ))}
       </section>
+      <section className="mt-12">
+        <h2 className="mb-4 text-2xl font-bold leading-[1.6] text-[var(--color-primary)] shadow-[0_4px_0_0_var(--color-primary)] inline-block">
+          Contact
+        </h2>
+        <ul className="text-base leading-[1.75] relative left-5 list-disc">
+          <li className="marker:text-[var(--color-primary)]">✉️ akh9804@gmail.com</li>
+        </ul>
+      </section>
     </div>
   );
 }
