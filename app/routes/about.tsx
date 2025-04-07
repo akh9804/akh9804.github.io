@@ -32,18 +32,21 @@ export default function About() {
     ],
     [],
   );
-  const projects = [
-    {
-      title: 'pattern.dev 번역 및 검수 활동 참여',
-      description: '프론트엔드 개발자를 위한 패턴 소개 사이트',
-      link: 'https://patterns-dev-kr.github.io/',
-    },
-    {
-      title: 'es-cookie 오픈소스 컨트리뷰트',
-      description: '쿠키 관리 라이브러리',
-      link: 'https://github.com/es-cookie/es-cookie',
-    },
-  ];
+  const projects = useMemo(
+    () => [
+      {
+        title: 'pattern.dev 번역 및 검수 활동 참여',
+        description: '프론트엔드 개발자를 위한 패턴 소개 사이트',
+        link: 'https://patterns-dev-kr.github.io/',
+      },
+      {
+        title: 'es-cookie 오픈소스 컨트리뷰트',
+        description: '쿠키 관리 라이브러리',
+        link: 'https://github.com/theodorejb/es-cookie/pull/11',
+      },
+    ],
+    [],
+  );
 
   return (
     <div>
