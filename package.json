@@ -9,7 +9,7 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/node": "^7.4.0",
+    "@react-router/node": "^7.9.4",
     "@react-router/serve": "^7.4.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
